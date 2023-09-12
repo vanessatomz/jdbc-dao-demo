@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         SellerDao sellerDao = DaoFactory.crateSellerDao();
+        System.out.println("===== TEST 1: Seller findById =======");
         Seller seller = sellerDao.findById(2);
         System.out.println(seller);
 
