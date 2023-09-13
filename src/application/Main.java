@@ -5,6 +5,7 @@ import model.Seller;
 import modelDao.DaoFactory;
 import modelDao.SellerDao;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,6 +22,13 @@ public class Main {
         List<Seller> list = sellerDao.findByDepartment(department);
         for(Seller obj: list){
             System.out.println(obj);
+            System.out.println();
+        }
+
+        System.out.println("\n===== TEST 3: Seller findAll =======");
+        List<Seller> list1 = sellerDao.findAll();
+        for(Seller ojb: list1){
+            System.out.println(ojb);
             System.out.println();
         }
 
