@@ -32,5 +32,11 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println("\n===== TEST 4: Seller Insert =======");
+        Department dep = new Department(1,"Computers");
+        Seller newSeller = new Seller(null,"Greg","gref@gmail.com",new Date(),4000.0,dep);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New id = " + newSeller.getId());
+
     }
 }
