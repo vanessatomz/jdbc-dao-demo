@@ -13,7 +13,7 @@ public class MainDepartment {
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
         // Test insert
-       /* Department department = new Department(null,"Music");
+       /* Department department = new Department(null,"Toys");
         departmentDao.insert(department);
         System.out.println("Inserted: " + department.getId());*/
 
@@ -27,10 +27,14 @@ public class MainDepartment {
         System.out.println(department); */
 
         // test findAll
-        List<Department> departments = departmentDao.findAll();
+        /*List<Department> departments = departmentDao.findAll();
         for(Department obj: departments){
             System.out.println(obj);
-        }
+        }*/
+
+        // test delete
+        departmentDao.deleteById(7);
+        System.out.println("Delete completed...");
 
     }
 }
