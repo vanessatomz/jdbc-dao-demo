@@ -16,10 +16,13 @@ public class MainDepartment {
         System.out.println("Inserted: " + department.getId());*/
 
         // Test update
-        Department department = new Department(6,"Food");
+        /* Department department = new Department(6,"Food");
         departmentDao.update(department);
-        System.out.println("Update completed...");
+        System.out.println("Update completed...");*/
 
+        // test findById
+       /* Department department = departmentDao.findById(6);
+        System.out.println(department); */
 
 
     }
