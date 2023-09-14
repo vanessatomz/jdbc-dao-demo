@@ -15,7 +15,10 @@ public class MainDepartment {
         departmentDao.insert(department);
         System.out.println("Inserted: " + department.getId());*/
 
-        
+        // Test update
+        Department department = new Department(6,"Food");
+        departmentDao.update(department);
+        System.out.println("Update completed...");
 
 
 
