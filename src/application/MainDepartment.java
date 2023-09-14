@@ -5,6 +5,8 @@ import modelDao.DaoFactory;
 import modelDao.DepartmentDao;
 import modelDaoImpl.DepartmentDaoJDBC;
 
+import java.util.List;
+
 public class MainDepartment {
     public static void main(String[] args) {
 
@@ -24,6 +26,11 @@ public class MainDepartment {
        /* Department department = departmentDao.findById(6);
         System.out.println(department); */
 
+        // test findAll
+        List<Department> departments = departmentDao.findAll();
+        for(Department obj: departments){
+            System.out.println(obj);
+        }
 
     }
 }
